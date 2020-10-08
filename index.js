@@ -8,7 +8,7 @@ movieTitleValue = () =>{
 
 moviePlot = (movieTitle, number) =>{
   let imdb = movieTitle;
-  const movie =`http://www.omdbapi.com/?i=${imdb}&apikey=a5755f9e&`;
+  const movie =`https://www.omdbapi.com/?i=${imdb}&apikey=a5755f9e&`;
   fetch(movie)
   .then((response) => response.json())
   .then((element) => {
@@ -55,7 +55,7 @@ const showPlot = (plot, number) =>{
 
 const findMovie =(movie) =>{
   container.innerHTML =""
-  const movieTitle = `http://www.omdbapi.com/?s=${movie}&apikey=a5755f9e&`;
+  const movieTitle = `https://www.omdbapi.com/?s=${movie}&apikey=a5755f9e&`;
   fetch(movieTitle)
     .then((response) => response.json())
     .then((elements)=>{
